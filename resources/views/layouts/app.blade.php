@@ -50,7 +50,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p class="copyright">&copy;<a href="index.html">Eslao</a> 2017. </p>
+            <p class="copyright">&copy;<a href="#">Eslao</a> 2017.</p>
         </footer>
 
     </div>
