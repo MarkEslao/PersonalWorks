@@ -25,7 +25,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/services">Services</a></li>
-                    <li><a href="#" class="button disabled">???</a></li>
+                    <li><a href="/posts">Blog</a></li>
                     <li><a href="#login">Log In</a></li>
                     <li><a href="#register">Register</a></li>
                 </ul>
@@ -38,7 +38,7 @@
             
         </header>
         <div id="main">
-
+    @yield('content2')
             <!-- Intro -->
             <article id="login">
                 <h2 class="major">Login</h2>

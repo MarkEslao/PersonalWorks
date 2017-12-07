@@ -718,6 +718,21 @@
 					border-top: 0;
 					padding-top: 0;
 				}
+        ul.pagination{
+            padding-left: 0.5em;
+        }
+            ul.pagination li{
+                display: inline-block;
+            }
+            ul.pagination li.active{
+                background-color: rgba(255, 255, 255, 0.175);
+            }
+                ul.pagination li a,
+                ul.pagination li span{
+					font-size: 18px;
+                    border-bottom: 0;
+                }
+                    
 
 		ul.icons {
 			cursor: default;
@@ -943,7 +958,8 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
+	.button,
+    .pagination li{
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -976,7 +992,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
-		.button:hover {
+		.button:hover,
+        .pagination li:hover {
 			background-color: rgba(255, 255, 255, 0.075);
 		}
 
@@ -984,8 +1001,9 @@
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		button:active,
-		.button:active {
-			background-color: rgba(255, 255, 255, 0.175);
+		.button:active,
+        .pagination li:active {
+			background-color: rgba(255, 255, 255, 0.5);
 		}
 
 		input[type="submit"].icon:before,
@@ -1024,7 +1042,9 @@
 		button.disabled,
 		button:disabled,
 		.button.disabled,
-		.button:disabled {
+		.button:disabled,
+        .pagination li.disabled,
+        .pagination li:disabled {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
@@ -1036,7 +1056,7 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button {
+	button{
 		line-height: calc(2.75rem - 2px);
 	}
 
@@ -1257,7 +1277,6 @@
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 40rem;
 				overflow: hidden;
 			}
 
